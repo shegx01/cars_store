@@ -19,6 +19,9 @@ defmodule CarsStoreWeb.Router do
     get "/", PageController, :index
   end
 
+  # forward("/api", Absinthe.Schema, Absinthe.Plug)
+  # forward("/graphigl",Absinthe.Plug.GraphiQL , interface: :simple)
+
   # Other scopes may use custom stacks.
   # scope "/api", CarsStoreWeb do
   #   pipe_through :api
