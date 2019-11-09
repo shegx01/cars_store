@@ -3,7 +3,6 @@ defmodule CarsStores.Images do
 
   schema "images" do
     field :url, :string
+    belongs_to(:cars, CarsStore.Cars)
   end
-
-  belongs_to(:cars, CarsStore.Cars)
 end
